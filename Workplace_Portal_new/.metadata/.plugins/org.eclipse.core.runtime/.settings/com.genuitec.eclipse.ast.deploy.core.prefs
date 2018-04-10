@@ -1,0 +1,13 @@
+#Thu Mar 29 10:30:10 IST 2018
+tomcat7Server.Portal.isDeployed=true
+tomcat7Server.Portal.deployIsOverProject=false
+tomcat7Server.Portal.IEARProjectName=
+tomcat7Server.Portal.altContextRoot=
+tomcat7Server.Portal.deploymentPath=D\:\\Workplace_Portal_new\\apache-tomcat-7.0.78\\webapps\\Portal
+tomcat7Server.Portal.type=WebDeployment
+tomcat7Server.Portal.isUptoDate=true
+tomcat7Server.Portal.shouldBackup=false
+tomcat7Server.Portal.isExploded=true
+tomcat7Server.Portal.contextRoot=/Portal
+eclipse.preferences.version=1
+tomcat7Server.Portal.shouldOverwrite=false

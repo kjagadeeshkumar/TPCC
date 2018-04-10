@@ -1,0 +1,9 @@
+#Sat Mar 24 17:23:53 IST 2018
+SERVER_ENABLEMENT=true
+LIBRARY_PATH="C\:\\Users\\Jagadeesh\\AppData\\Local\\Genuitec\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013\\bin;D\:\\Workplace_Portal_new\\apache-tomcat-7.0.78\\bin"
+eclipse.preferences.version=1
+JDK_HOME=C\:\\Users\\Jagadeesh\\AppData\\Local\\Genuitec\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013
+TOMCAT_BASE=D\:\\Workplace_Portal_new\\apache-tomcat-7.0.78
+ENDORSED_DIRS="D\:\\Workplace_Portal_new\\apache-tomcat-7.0.78/common/endorsed"
+TOMCAT_HOME=D\:\\Workplace_Portal_new\\apache-tomcat-7.0.78
+TOMCAT_TEMP=D\:\\Workplace_Portal_new\\apache-tomcat-7.0.78\\temp

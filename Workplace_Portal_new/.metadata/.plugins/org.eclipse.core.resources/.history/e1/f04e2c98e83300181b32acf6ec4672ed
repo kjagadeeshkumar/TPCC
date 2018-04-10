@@ -1,0 +1,108 @@
+package com.reports.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.adminmodule.dao.AjaxControllerDao;
+import com.reports.dao.ReportsModuleDao;
+import com.reports.entity.PublishedNewsReportBean;
+import com.reports.entity.RegisteredMembersProgressiveReportBean;
+import com.spring.beans.Beans;
+
+@Controller
+public class PublishedNewsReportController {
+
+	/* It provides list of employees in model object */
+	@RequestMapping("/publishedNewsReport")
+	public ModelAndView viewPublishedNews() {
+	//	ReportsModuleDao dao = Beans.reportsModuleDao;// will inject dao from
+		// xml file
+	//	List<PublishedNewsReportBean> list = dao.retrievePublishedNews(); 
+		return new ModelAndView("publishedNewsReport");
+	}
+	
+	
+	@ResponseBody
+	@RequestMapping(value = "/getLatestNews")
+	public Object getSearchResultViaAjaxLatestNews() {
+		
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+			
+		return dao.retrievePostedLatestNews().toString();      // .toString() compulsory
+
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/getEntertainmentNews")
+	public Object getSearchResultViaAjaxEntertainmentNews() {
+		
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+			
+		return dao.retrievePostedEntertainmentNews().toString();      // .toString() compulsory
+
+	}
+	@ResponseBody
+	@RequestMapping(value = "/getSportsNews")
+	public Object getSearchResultViaAjaxSportsNews() {
+		
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+			
+		return dao.retrievePostedSportsNews().toString();      // .toString() compulsory
+
+	}
+	@ResponseBody
+	@RequestMapping(value = "/getBusinessNews")
+	public Object getSearchResultViaAjaxBusinessNews() {
+		
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+			
+		return dao.retrievePostedBusinessNews().toString();      // .toString() compulsory
+
+	}
+	@ResponseBody
+	@RequestMapping(value = "/getEducationEmploymentNews")
+	public Object getSearchResultViaAjaxEducationEmploymentNews() {
+		
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+			
+		return dao.retrievePostedEducationEmploymentNews().toString();      // .toString() compulsory
+
+	}
+	@ResponseBody
+	@RequestMapping(value = "/getFamilyHealthNews")
+	public Object getSearchResultViaAjaxFamilyHealthNews() {
+		
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+			
+		return dao.retrievePostedFamilyHealthNews().toString();      // .toString() compulsory
+
+	}
+	/*delete news*/
+	@ResponseBody
+	@RequestMapping(value = "/getLatestNewsToDelete/{Id}")
+	public Object getSearchResultViaAjaxLatestNewsToDelete(@PathVariable int Id) {
+		
+		System.out.println("cont");
+		ReportsModuleDao dao = Beans.reportsModuleDao;
+	        
+	        return dao.deleteNews(Id).toString();  
+	      
+	}
+	
+	
+	
+}

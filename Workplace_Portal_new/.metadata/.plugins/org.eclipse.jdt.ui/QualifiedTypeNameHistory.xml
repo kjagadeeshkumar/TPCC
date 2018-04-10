@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.dmedia.dao.DMediaModuleDao"/>
+<fullyQualifiedTypeName name="com.reports.dao.ReportsModuleDao"/>
+<fullyQualifiedTypeName name="com.reports.entity.PublishedNewsReportBean"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.reports.controller.PublishedNewsReportController"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+</qualifiedTypeNameHistroy>
